@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 import Card from "@/components/card";
+import ClientsTable from "@/components/Table/clientTable";
+import FacturesTable from "@/components/Table/facturesTable";
 
 const user = {
   name: "Tom Cook",
@@ -204,10 +206,14 @@ export default function Accueil() {
           </div>
         </header>
         <main>
-          <div className=" max-w-7xl py-6 sm:px-6 lg:px-8">
-            <div className="mt-5 mx-3 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2">
+          <div>
+            <div className="mt-5 mx-3 py-6 sm:px-6 lg:px-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2">
               <Card icon={<UserGroupIcon />} name="Clients" value={12} />
               <Card icon={<UserGroupIcon />} name="Factures" value={5} />
+            </div>
+            <div className="divide-y lg:px-10 grid grid-cols-1 gap-3 sm:grid-cols-2 ">
+                <ClientsTable />
+                <FacturesTable/>
             </div>
 
             {/* Your content */}

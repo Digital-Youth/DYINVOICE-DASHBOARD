@@ -3,9 +3,6 @@
 export default function Card({icon, name, value}) {
   return (
     <div>
-      <h3 className="text-base font-semibold leading-6 text-gray-900">
-      </h3>
-
       <dl>
         <div className="relative overflow-hidden rounded-lg bg-white px-4 pb-12 pt-5 shadow sm:px-6 sm:pt-6">
           <dt>
