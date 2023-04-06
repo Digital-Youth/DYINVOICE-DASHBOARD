@@ -1,8 +1,14 @@
 import Header from "@/components/header";
+import ClientEdit from "@/components/modals/clientEdit";
 import Navbar from "@/components/navBar";
-
+import {useState} from 'react'
 
 export default function ClientDetails() {
+
+  const [open, setOpen] = useState(false);
+      const handleEditClose = () => {
+        setOpen(false);
+      };
   return (
     <>
       <div className="min-h-full">
@@ -35,14 +41,16 @@ export default function ClientDetails() {
             {/* Modifier le client ou Editer */}
             <div className="mt-6 flex flex-col-reverse justify-stretch space-y-4 space-y-reverse sm:flex-row-reverse sm:justify-end sm:space-x-3 sm:space-y-0 sm:space-x-reverse md:mt-0 md:flex-row md:space-x-3">
               <button
+                onClick={() => setOpen(true)}
                 type="button"
-                className="inline-flex items-center justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                className="inline-flex items-center justify-center rounded-md bg-yellow-500 px-3 py-2 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-gray-300"
               >
                 Modifier
               </button>
+              {open && <ClientEdit onClose={handleEditClose}/>}
               <button
                 type="button"
-                className="inline-flex items-center justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                className="inline-flex items-center justify-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 Créer une facture
               </button>

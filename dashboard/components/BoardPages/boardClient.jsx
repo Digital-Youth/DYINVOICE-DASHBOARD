@@ -1,6 +1,13 @@
+import ClientEdit from "@/components/modals/clientEdit";
 import { PlusIcon } from "@heroicons/react/20/solid";
+import { useState} from "react";
 
 export default function BoardClient() {
+
+  const [open, setOpen] = useState(false);
+    const handleEditClose = () => {
+      setOpen(false);
+    };
   return (
     <div className="overflow-hidden mt-8 rounded-lg border-2 border-gray-200 px-4 pb-5 pt-5 sm:px-6 sm:pt-6">
       <div className="text-xl py-3  sm:flex sm:items-center">
@@ -51,12 +58,6 @@ export default function BoardClient() {
             >
               Actions
             </th>
-            {/* <th
-              scope="col"
-              className="relative py-3.5 pl-3 pr-4 sm:pr-6 lg:pr-8"
-            >
-              <span className="sr-only">Edit</span>
-            </th> */}
           </tr>
         </thead>
         <tbody className="rounded-lg ">
@@ -68,14 +69,18 @@ export default function BoardClient() {
             <td className="whitespace-nowrap py-4 text-sm text-gray-500">
               <a
                 href="/Clients/clientDetails"
-                className="text-yellow-500 px-4 hover:text-yellow-500"
+                className="text-green-500 px-4 font-bold hover:text-green-500"
               >
                 View<span className="sr-only"></span>
               </a>
-              <a href="#" className="text-indigo-600 hover:text-indigo-900">
+              <button
+                onClick={() => setOpen(true)}
+                className="text-yellow-400 font-bold hover:text-yellow-400"
+              >
                 Edit<span className="sr-only"></span>
-              </a>
-              <a href="#" className="text-red-600 px-4">
+              </button>
+              {open && <ClientEdit onClose={handleEditClose} />}
+              <a href="#" className="text-red-500 font-bold px-4">
                 Supprimer<span className="sr-only"></span>
               </a>
             </td>
