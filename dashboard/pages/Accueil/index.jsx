@@ -14,7 +14,7 @@ export default function Accueil() {
     <>
       <div className="min-h-full">
         <Navbar />
-        <Header name={"Terence"} />
+        <Header message={"Bienvenue,"} name={"Terence"} />
         <main>
           <div>
             <div className="mt-5 mx-3 py-6 sm:px-6 lg:px-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2">

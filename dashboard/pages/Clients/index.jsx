@@ -10,8 +10,8 @@ export default function Clients() {
   return (
     <>
       <div className="min-h-full">
-        <Navbar/>
-              <Header name={"Terence"} />
+        <Navbar />
+        <Header message={"Gestion de"} name={" Clients"} />
         <main>
           <div>
             <div className="p-7 mx-3 sm:flex sm:items-center">
@@ -20,13 +20,13 @@ export default function Clients() {
                   Clients
                 </h1>
                 <p className=" text-sm text-gray-700">
-                  A list of all the users in your account including their name,
-                  title, email and role.
+                  Une liste de tous les clients de votre compte, avec leur nom,
+                  leur titre, leur adresse mail.
                 </p>
               </div>
             </div>
             <div className=" mx-3 py-6 sm:px-6 lg:px-8">
-              <BoardClient/>
+              <BoardClient />
             </div>
             {/* Your content */}
           </div>
