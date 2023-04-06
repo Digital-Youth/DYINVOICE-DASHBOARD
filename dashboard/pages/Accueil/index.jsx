@@ -2,7 +2,7 @@
 import {
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
-import Card from "@/components/card";
+import Card from "@/components/Cards/card";
 import ClientsTable from "@/components/TableHome/clientTable";
 import FacturesTable from "@/components/TableHome/facturesTable";
 import Navbar from "@/components/navBar";

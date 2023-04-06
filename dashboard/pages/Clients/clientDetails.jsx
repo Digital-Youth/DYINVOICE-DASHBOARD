@@ -1,18 +1,5 @@
-import {
-  CheckIcon,
-  HandThumbUpIcon,
-  QuestionMarkCircleIcon,
-  UserIcon,
-} from "@heroicons/react/20/solid";
+import Header from "@/components/header";
 import Navbar from "@/components/navBar";
-
-const user = {
-  name: "Whitney Francis",
-  email: "whitney@example.com",
-  imageUrl:
-    "https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
-};
-
 
 
 export default function ClientDetails() {
@@ -20,7 +7,7 @@ export default function ClientDetails() {
     <>
       <div className="min-h-full">
         <Navbar />
-
+        <Header/>
         <main className="py-10">
           {/* Page header */}
           <div className="mx-auto max-w-3xl px-4 sm:px-6 md:flex md:items-center md:justify-between md:space-x-5 lg:max-w-7xl lg:px-8">
@@ -114,7 +101,7 @@ export default function ClientDetails() {
                 </div>
               </section>
 
-              {/* Comments*/}
+              {/* Factures*/}
               <section aria-labelledby="notes-title">
                 <div className="bg-white shadow sm:overflow-hidden sm:rounded-lg">
                   <div className="divide-y divide-gray-200">

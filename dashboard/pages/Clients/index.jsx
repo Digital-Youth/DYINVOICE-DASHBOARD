@@ -1,6 +1,6 @@
 
-import BoardClient from "@/components/boardClient";
-import Card from "@/components/card";
+import BoardClient from "@/components/BoardPages/boardClient";
+import Card from "@/components/Cards/card";
 import Header from "@/components/header";
 import Navbar from "@/components/navBar";
 
