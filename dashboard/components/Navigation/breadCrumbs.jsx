@@ -13,7 +13,15 @@ const pages = [
       { name: "Ajouter Client", href: "/Clients/clientForm" },
     ],
   },
-  { name: "Factures", href: "/Factures", current: false },
+  {
+    name: "Factures",
+    href: "/Factures",
+    current: false,
+    subpages: [
+      { name: "Créer une facture", href: "/Factures/factureCreate" },
+
+    ],
+  },
 ];
 
 export default function Breadcrumb() {

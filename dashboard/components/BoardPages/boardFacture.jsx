@@ -10,7 +10,7 @@ export default function BoardFacture() {
         </div>
         <div className=" sm:ml-16 sm:mt-0 sm:flex-none">
           <a
-            href="/Clients/clientForm"
+            href="/Factures/factureCreate"
             type="button"
             className=" inline-flex rounded-md bg-white outline outline-offset-2 outline-green-600 px-3 py-2 text-sm font-semibold text-green-600 shadow-sm hover:bg-green-600 hover:text-white cursor-pointer"
           >

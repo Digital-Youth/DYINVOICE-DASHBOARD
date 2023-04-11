@@ -7,7 +7,7 @@ export default function ClientsTable() {
         <div className="sm:flex-auto">
           <p>Client</p>
         </div>
-        <div className=" sm:ml-16 sm:mt-0 sm:flex-none">
+        <div className="sm:ml-16 sm:mt-0 sm:flex-none ">
           <a
             href="/Clients/clientForm"
             type="button"

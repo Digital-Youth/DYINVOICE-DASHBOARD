@@ -28,16 +28,16 @@ export default function ClientEdit({ onClose }) {
               >
                 <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
                   <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
-                    <div className="bg-yellow-400 px-4 py-6 sm:px-6">
+                    <div className="bg-black px-4 py-6 sm:px-6">
                       <div className="flex items-center justify-between">
-                        <Dialog.Title className="text-base font-semibold leading-6 text-black">
+                        <Dialog.Title className="text-base font-semibold leading-6 text-white">
                           {/* Ici là où il y a client on doit recupérer le nom du client */}
                           Modifier client
                         </Dialog.Title>
                         <div className="ml-3 flex h-7 items-center">
                           <button
                             type="button"
-                            className="rounded-md text-black "
+                            className="rounded-md text-white "
                             onClick={handleClose}
                           >
                             <span className="sr-only">Close panel</span>
@@ -45,12 +45,6 @@ export default function ClientEdit({ onClose }) {
                           </button>
                         </div>
                       </div>
-                      {/* <div className="mt-1">
-                        <p className="text-sm text-indigo-300">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit aliquam ad hic recusandae soluta.
-                        </p>
-                      </div> */}
                     </div>
                     <div className="relative flex-1 px-4 py-6 sm:px-6">
                       {/* Your content */}

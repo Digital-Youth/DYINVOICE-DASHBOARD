@@ -7,6 +7,7 @@ import ClientsTable from "@/components/TableHome/clientTable";
 import FacturesTable from "@/components/TableHome/facturesTable";
 import Navbar from "@/components/navBar";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 
 export default function Accueil() {
@@ -22,13 +23,17 @@ export default function Accueil() {
               <Card icon={<UserGroupIcon />} name="Clients" value={12} />
               <Card icon={<UserGroupIcon />} name="Factures" value={5} />
             </div>
-            <div className="divide-y lg:px-10 grid grid-cols-1 gap-3 sm:grid-cols-2 ">
+            <div className="lg:px-10 grid grid-cols-1 gap-3 sm:grid-cols-2 ">
               <ClientsTable />
               <FacturesTable />
             </div>
             {/*End of Your content */}
           </div>
         </main>
+        <div>
+          <Footer />
+        </div>
+       
       </div>
     </>
   );
