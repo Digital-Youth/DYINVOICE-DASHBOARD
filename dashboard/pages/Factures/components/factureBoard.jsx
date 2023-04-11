@@ -2,37 +2,37 @@
 export default function FacturesBoard() {
   return (
     <div className="mt-8 px-4 pb-5 pt-5 sm:px-6 sm:pt-6 overflow-x-auto">
-      <table className="min-w-full divide-y divide-gray-300">
+      <table className="min-w-full divide-y divide-gray-300 ">
         <thead>
           <tr>
             <th
               scope="col"
-              className="py-3.5 px-3  text-left text-sm font-semibold text-gray-900 w-40 sm:w-auto"
+              className="py-3.5 px-3  text-left text-sm font-light text-blue-600 w-40 sm:w-auto"
             >
               Description
             </th>
             <th
               scope="col"
-              className="py-3.5 px-3  text-left text-sm font-semibold text-gray-900 w-40 sm:w-auto"
+              className="py-3.5 px-3  text-left text-sm font-light text-blue-600 w-40 sm:w-auto"
             >
               Prix
             </th>
             <th
               scope="col"
-              className="py-3.5 px-3  text-left text-sm font-semibold text-gray-900 w-40 sm:w-auto"
+              className="py-3.5 px-3  text-left text-sm font-light text-blue-600 w-40 sm:w-auto"
             >
               Quantité
             </th>
             <th
               scope="col"
-              className="py-3.5 px-3  text-left text-sm font-semibold text-gray-900 w-40 sm:w-auto"
+              className="py-3.5 px-3  text-left text-sm font-light text-blue-600 w-40 sm:w-auto"
             >
               Total
             </th>
           </tr>
         </thead>
-        <tbody className="rounded-lg ">
-          <tr>
+        <tbody className="divide-y divide-black ">
+          <tr className="">
             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
               <div className="mt-2 sm:col-span-2 sm:mt-0">
                 <input

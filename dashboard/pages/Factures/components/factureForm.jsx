@@ -10,7 +10,7 @@ export default function FactureForm() {
         <div className="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2">
           {/* Header Facture */}
           <div className="py-3 m-3  sm:flex sm:items-center">
-            <div className=" text-2xl px-3 sm:flex-auto">
+            <div className="text-4xl font-extrabold px-3 sm:flex-auto">
               <p>Digital Youth Service</p>
             </div>
             <div className="font-thin text-end font-serif text-sm sm:ml-16 sm:mt-0 sm:flex-none">
@@ -26,10 +26,11 @@ export default function FactureForm() {
           </div>
           {/* Display Client Information */}
           <div>
-            <ClientInformations/>
+            <ClientInformations />
           </div>
+          <hr className="my-8 mx-4 border-2 rounded-lg border-blue-600" />
           {/* Display the board */}
-          <div className="">
+          <div>
             <FacturesBoard />
           </div>
 
