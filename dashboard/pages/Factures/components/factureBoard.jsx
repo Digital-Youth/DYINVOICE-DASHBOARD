@@ -9,7 +9,7 @@ export default function FacturesBoard() {
               scope="col"
               className="py-3.5 px-3  text-left text-sm font-light text-blue-600 w-40 sm:w-auto"
             >
-              Description
+              Designation
             </th>
             <th
               scope="col"

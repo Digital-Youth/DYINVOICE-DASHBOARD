@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 import CardHeader from "./cardHeader";
 import ClientInformations from "./clientInformation";
 import FacturesBoard from "./factureBoard";
@@ -33,27 +33,31 @@ export default function FactureForm() {
           <div>
             <FacturesBoard />
           </div>
+        </div>
 
-          <div className="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
+        <div className="flex flex-col items-center">
+          <button
+            type="submit"
+            className="rounded-md bg-blue-600 w-full px-3 py-2 text-sm font-semibold text-white shadow-xl drop-shadow-xl hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            Envoyer la facture
+          </button>
+
+          <div className="py-8 flex-col space-x-4 col grid-cols-2 justify-center">
             <button
-              type="button"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              type="submit"
+              className="rounded-md w-56 bg-white shadow-xl px-6 py-2 text-lg text-slate-950 hover:bg-black hover:text-white font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Cancel
+              Visualiser
             </button>
             <button
               type="submit"
-              className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-md w-56 bg-white shadow-xl px-6 py-2 text-lg text-slate-950 hover:bg-black hover:text-white font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Save
+              Télécharger
             </button>
           </div>
         </div>
-        <div className="bg-white shadow-sm ring-1  ring-gray-900/5 sm:rounded-xl "></div>
-
-        {/* <p className="mt-1 text-sm leading-6 text-gray-600">
-          Use a permanent address where you can receive mail.
-        </p> */}
       </div>
     </div>
   );

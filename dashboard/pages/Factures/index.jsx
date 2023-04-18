@@ -1,4 +1,3 @@
-
 import BoardFacture from "@/components/BoardPages/boardFacture";
 import Header from "@/components/header";
 import Navbar from "@/components/navBar";

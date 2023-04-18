@@ -2,12 +2,27 @@ import DatePicker from "react-datepicker";
 import React, { useState } from "react";
 import "react-datepicker/dist/react-datepicker.css";
 
+function getCurrencySymbol(currency) {
+  switch (currency) {
+    case "USD":
+      return "$";
+    case "Euro":
+      return "€";
+    case "Franc CFA":
+      return "CFA";
+    default:
+      return "";
+  }
+}
 export default function ClientInformations() {
-      const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [amount, setAmount] = useState(800);
+  const [currency, setCurrency] = useState("");
 
-      const handleChange = (date) => {
-        setSelectedDate(date);
-      };
+  const handleChange = (date) => {
+    setSelectedDate(date);
+  };
+
   return (
     <div className="mt-8 px-4 pb-5 pt-5 sm:px-6 sm:pt-6 overflow-x-auto">
       <table className="min-w-full ">
@@ -73,7 +88,10 @@ export default function ClientInformations() {
               </div>
             </td>
             <td className="whitespace-nowrap px-3 py-4 text-sm text-black">
-              <p className="text-3xl font-bold ">8000€</p>
+              <p className="text-3xl font-bold ">
+                {getCurrencySymbol(currency)}
+                {amount}
+              </p>
             </td>
           </tr>
         </tbody>

@@ -1,5 +1,5 @@
 export default function CardHeader({ value }) {
-  const newValue = `0${value}`;
+
   return (
     <div className="px-5 py-6 h-auto">
       <dl>
