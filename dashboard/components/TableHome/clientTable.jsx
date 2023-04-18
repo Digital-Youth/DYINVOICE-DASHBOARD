@@ -5,9 +5,9 @@ export default function ClientsTable() {
     <div className="overflow-hidden mt-8 rounded-lg border-2 border-gray-200 px-4 pb-5 pt-5 sm:px-6 sm:pt-6">
       <div className="text-xl py-3  sm:flex sm:items-center">
         <div className="sm:flex-auto">
-          <p>Client</p>
+          <p>Clients</p>
         </div>
-        <div className=" sm:ml-16 sm:mt-0 sm:flex-none">
+        <div className="sm:ml-16 sm:mt-0 sm:flex-none ">
           <a
             href="/Clients/clientForm"
             type="button"
