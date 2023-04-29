@@ -1,8 +1,8 @@
 
 import BoardClient from "@/components/BoardPages/boardClient";
-import Card from "@/components/Cards/card";
 import Header from "@/components/header";
 import Navbar from "@/components/navBar";
+import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
 
 
 

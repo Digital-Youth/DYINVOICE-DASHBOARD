@@ -1,35 +1,28 @@
+const stats = [
+  { id: 1, name: 'Clients', value: '12' },
+  { id: 2, name: 'Factures', value: '5' },
+]
 
-
-export default function Card({icon, name, value}) {
+export default function Example() {
   return (
-    <div>
-      <dl>
-        <div className="relative overflow-hidden rounded-lg bg-white px-4 pb-12 pt-5 shadow sm:px-6 sm:pt-6">
-          <dt>
-            <div className="absolute h-6 w-6 rounded-md bg-blue-500 p-3">
-              {icon}
-              {/* <item.icon className="h-6 w-6 text-white" aria-hidden="true" /> */}
-            </div>
-            <p className="ml-16 truncate text-sm font-medium text-gray-500">
-              {name}
+    <div className="rounded-xl bg-gray-900 py-16">
+      <div className="mx-auto max-w-7xl px-4 lg:px-6">
+        <div className="mx-auto max-w-2xl lg:max-w-none">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Bilan des statistiques</h2>
+            <p className="mt-2 text-lg leading-8 text-gray-300">
             </p>
-          </dt>
-          <dd className="ml-16 flex items-baseline pb-6 sm:pb-7">
-            <p className="text-2xl font-semibold text-gray-900">{value}</p>
-            <div className="absolute inset-x-0 bottom-0 bg-gray-50 px-4 py-4 sm:px-6">
-              <div className="text-sm">
-                <a
-                  href="#"
-                  className="font-medium text-blue-600 hover:text-blue-500"
-                >
-                  {" "}
-                  View all<span className="sr-only"> {name} stats</span>
-                </a>
+          </div>
+          <dl className="mt-12 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 ">
+            {stats.map((stat) => (
+              <div key={stat.id} className="flex flex-col bg-white/5 p-8">
+                <dt className="text-sm font-bold leading-6 text-gray-300">{stat.name}</dt>
+                <dd className="order-first text-3xl font-semibold tracking-tight text-blue-400">{stat.value}</dd>
               </div>
-            </div>
-          </dd>
+            ))}
+          </dl>
         </div>
-      </dl>
+      </div>
     </div>
-  );
+  )
 }
