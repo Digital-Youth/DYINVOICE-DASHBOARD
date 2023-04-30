@@ -1,9 +1,7 @@
 
-import BoardClient from "@/components/BoardPages/boardClient";
 import NewBoardClient from "@/components/BoardPages/newBoardClient";
 import Header from "@/components/header";
 import Navbar from "@/components/navBar";
-import { BrowserRouter as Router, Switch, Route, useLocation } from 'react-router-dom';
 import ClientsHeader from "./clientsHeader";
 
 
@@ -13,7 +11,7 @@ export default function Clients() {
     <>
       <div className="min-h-full">
         <Navbar />
-        <Header message={"Gestion de"} name={" Clients"} />
+        <Header message={"Gestion des"} name={" Clients"} />
        
 
         <main>

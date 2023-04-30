@@ -68,7 +68,7 @@ export default function BoardClient() {
             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500"></td>
             <td className="whitespace-nowrap py-4 text-sm text-gray-500">
               <a
-                href="/Clients/clientDetails"
+                href="/Clientstails"
                 className="text-green-500 px-4 font-bold hover:text-green-500"
               >
                 View<span className="sr-only"></span>
