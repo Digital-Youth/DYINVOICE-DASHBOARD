@@ -7,6 +7,7 @@ export default function ClientDetails() {
 
   const [open, setOpen] = useState(false);
       const handleEditClose = () => {
+        
         setOpen(false);
       };
   return (
