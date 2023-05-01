@@ -46,12 +46,7 @@ export default function ClientInformations() {
             >
               Num. Facture
             </th>
-            <th
-              scope="col"
-              className="py-3.5 px-3  text-left text-sm font-semibold text-gray-900 w-40 sm:w-auto"
-            >
-              Montant à payer
-            </th>
+
           </tr>
         </thead>
         <tbody className="rounded-lg ">
@@ -82,17 +77,12 @@ export default function ClientInformations() {
                 />
               </div>
             </td>
-            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+            <td className="whitespace-nowrap px-3 py-4 text-sm">
               <div className="mt-2 sm:col-span-2 sm:mt-0">
-                <p>2023-03-21-0002</p>
+                <p className="">2023-03-21-0002</p>
               </div>
             </td>
-            <td className="whitespace-nowrap px-3 py-4 text-sm text-black">
-              <p className="text-3xl font-bold ">
-                {getCurrencySymbol(currency)}
-                {amount}
-              </p>
-            </td>
+
           </tr>
         </tbody>
       </table>
